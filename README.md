@@ -13,4 +13,9 @@
   - Read More button is used to get data of Persons living in the that planet/area
   - hover over the table of person to view beautifull animations on hover
 
+
+  # Project Link
+
+  - https://starwar7042.netlify.app/
+
  
