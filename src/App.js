@@ -1,23 +1,24 @@
-import './App.css';
-import Body from './components/Body.js';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import Body from "./components/Body";
+import ResidentsDetails from "./components/ResidentsDetails.js";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
+// Routing
 const appRouter = createBrowserRouter([
   {
     path: "/",
-    element: <Body/>,
+    element: <Body />,
   },
-  // {
-  //   path: "/next",
-  //   element: <Next/>,
-  // }
-    
-])
+  {
+    path: "/residents",
+
+    element: <ResidentsDetails />,
+  },
+]);
 
 function App() {
   return (
     <div className="App">
-      <RouterProvider router={appRouter}/>
+      <RouterProvider router={appRouter} />
     </div>
   );
 }

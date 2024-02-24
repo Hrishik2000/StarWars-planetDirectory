@@ -1,22 +1,18 @@
-import React from 'react'
-import CardContainer from './CardContainer'
-
+import React from "react";
+import CardContainer from "./CardContainer";
+import Header from "./Header";
 
 const Body = () => {
-
   return (
 
-    <div className='bg-black'>
-      {/* <img className='h-full w-full absolute' src='https://w0.peakpx.com/wallpaper/410/412/HD-wallpaper-plain-black-black.jpg'></img> */}
-      <div className=' flex flex-col '>
-      <h1 className='text-white font-bold text-4xl mx-auto my-6  '>Star Wars Planets Directory</h1>
-
-
-      <CardContainer/>
+    // main Body component
+    <div className="bg-gradient-to-b from-gray-900 to-black min-h-screen">
+      <div className="flex flex-col">
+        <Header />
+        <CardContainer />
       </div>
-      
     </div>
-  )
-}
+  );
+};
 
-export default Body
+export default Body;
